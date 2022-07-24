@@ -4,13 +4,41 @@
     box-sizing: border-box;
 }
 
-header{
-    
+body{
+    display: flex;
+    min-height: 100vh;  
+    text-align: center;
 }
 
-nav{
+
+
+#main-content{
+    background-color: lightblue;
+    width: 75%;
+    margin-left: 25%;
+    padding: 1rem;
+    border: solid red 2px;
 }
 
+#sidebar{
+    position: fixed;
+    width:25%;
+    background-color: lightgrey;
+    height:100%;
+}
+
+#main-doc{
+    background-color: aliceblue;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 2rem 1rem;
+}
+
+li a{
+    color: white;
+}
 
 
 @media(max-width: 800px) {
