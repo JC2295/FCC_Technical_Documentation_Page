@@ -80,7 +80,9 @@ nav ul li:hover{
 }
 
 section ul li{
-    list-style-type: none;
+    text-align: left;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 li a{
