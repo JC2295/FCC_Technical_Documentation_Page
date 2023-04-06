@@ -53,6 +53,8 @@ section{
 
 nav ul li a{
     font-family: 'Roboto', sans-serif;
+    display: block;
+    padding: 1rem;
 }
 
 nav header h1{
@@ -66,7 +68,6 @@ nav header h1{
 
 nav ul li{
     list-style-type: none;
-    padding: 1rem 1rem;
     border: solid black 2px;
     margin: 1rem 0rem;
 }
@@ -106,6 +107,7 @@ code{
         margin-left: 0%;
         margin-top: 30vh;
         position: fixed;
+        height: 70vh;
         overflow-y: scroll;
     }
     
