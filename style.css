@@ -11,6 +11,7 @@ body{
     display: flex;
     min-height: 100vh;  
     text-align: center;
+    background-color: lightgray;
 }
 
 p{
@@ -109,6 +110,7 @@ code{
         position: fixed;
         height: 70vh;
         overflow-y: scroll;
+        border-top: solid black 2px;
     }
     
     #sidebar{
