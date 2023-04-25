@@ -96,6 +96,7 @@ li a{
 
 code{
     background-color: lightgrey;
+    font-size: 1rem;
 }
 
 @media(width < 589px){
