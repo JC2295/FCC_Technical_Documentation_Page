@@ -44,7 +44,7 @@ section{
     margin: 2rem;
 }
 
-#sidebar{
+#navbar{
     position: fixed;
     overflow-y: scroll;
     width:25%;
@@ -116,7 +116,7 @@ code{
         border-top: solid black 2px;
     }
     
-    #sidebar{
+    #navbar{
         position: static;
         width: auto;
         height: 30vh;
