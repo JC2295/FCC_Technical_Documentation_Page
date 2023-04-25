@@ -98,7 +98,7 @@ code{
     background-color: lightgrey;
 }
 
-@media(max-width: 720px){
+@media(width < 589px){
 
     body{
         flex-direction:  column;
