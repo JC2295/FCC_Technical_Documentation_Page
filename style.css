@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 #mini-menu-container{
@@ -19,8 +20,7 @@ body{
     background-color: lightgray;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
+p{   
     text-align: justify;
     font-weight: 500;
     margin-top: 1rem;
@@ -28,8 +28,8 @@ p{
 
 section header h1{
     text-align: left;
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 section{
@@ -59,14 +59,10 @@ section{
 }
 
 nav ul li a{
-    font-family: 'Roboto', sans-serif;
     display: block;
     padding: 1rem;
 }
 
-nav header h1{
-    font-family: 'Roboto', sans-serif;
-}
 
 #main-doc{
     background-color: aliceblue;
@@ -99,32 +95,73 @@ li a{
     font-weight: bold;
 }
 
+.nav-link{
+    text-decoration: none;
+}
+
 code{
     background-color: lightgrey;
     font-size: 1rem;
 }
 
-@media(width < 589px){
-
-    #mini-menu-heading{
-        width: 100%;
-    }
+@media(width < 700px){ /*589px*/
 
     #mini-menu-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 0.5rem;
-        padding: 0.5rem;
         width: 100%;
     }
 
-    #mini-menu{
-        width: 50%;
+    #mini-menu-heading{
+        margin: 0;
+        width: 100%;
+        text-align: left;
         padding:0.5rem;
-        font-size: 1rem;
-        font-style: bold;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .dropdown-button{
+        width: 150px;
+        padding:0.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+    .dropdown-container{
+        margin: 0;
+        position: relative;
+    }
+
+    .dropdown-menu{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+        top: 100%;
+        background-color: lightgrey;
+        box-shadow: 2px 2px 5px;
+    }
+
+    .dropdown-container:hover .dropdown-menu{
+        display: flex;
+    }
+
+    .dropdown-menu  a{
+        width: 150px;
+        padding: 0.25rem 0.2rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .dropdown-menu > a:hover{
+        background-color: grey;
     }
 
     body{
