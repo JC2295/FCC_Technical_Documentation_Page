@@ -108,7 +108,7 @@ code{
 
     #mini-menu-container{
         display: flex;
-        position: fixed;
+        position: sticky;
         top:0;
         flex-direction: column;
         justify-content: center;
